@@ -1,0 +1,28 @@
+{
+  "name": "react-for-beginners",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "prop-types": "^15.5.10",
+    "re-base": "^3.0.3",
+    "react": "^15.6.1",
+    "react-addons-css-transition-group": "^15.6.0",
+    "react-dom": "^15.6.1",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.0.12",
+    "stylus": "^0.54.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "styles": "stylus -u autoprefixer-stylus ./src/css/style.styl -o ./src/css/style.css",
+    "styles:watch": "stylus -u autoprefixer-stylus -w ./src/css/style.styl -o ./src/css/style.css",
+    "deploy": "now ./build --public"
+  },
+  "devDependencies": {
+    "autoprefixer-stylus": "^0.14.0",
+    "concurrently": "^3.5.0"
+  }
+}
