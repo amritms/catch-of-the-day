@@ -19,9 +19,9 @@ const Root = () => {
   </main>
     );
 }
-
+const repo = `/${window.location.pathname.split('/')[1]}`;
 ReactDOM.render(
-    <BrowserRouter>
+    <BrowserRouter basename={repo}>
         <Root  />
     </BrowserRouter>
     , document.getElementById('main'));
